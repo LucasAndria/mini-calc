@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Mini-calculatrice</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<table align="center">
+		<tr>
+			<td align="center" colspan="4">Calculatrice</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<input type="text" id="result" readonly class="result"
+					style="width: 250px; height: 25px; margin-bottom: 30px; margin-top: 30px;" value="0">
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><button id="CE" class="bt" onclick="CE();">CE</button></td>
+			<td align="center"><button id="<" class="bt" onclick="less();">&larr;</button></td>
+			<td align="center"><button id="(" class="bt" onclick="input('(')">(</button></td>
+			<td align="center"><button id=")" class="bt" onclick="input(')')">)</button></td>
+		</tr>
+		<tr>
+			<td align="center"><button id="7" class="bt" onclick="input(7);">7</button></td>
+			<td align="center"><button id="8" class="bt" onclick="input(8);">8</button></td>
+			<td align="center"><button id="9" class="bt" onclick="input(9);">9</button></td>
+			<td align="center"><button id="÷" class="bt" onclick="input('/');">÷</button></td>
+		</tr>
+		<tr>
+			<td align="center"><button id="4" class="bt" onclick="input(4);">4</button></td>
+			<td align="center"><button id="5" class="bt" onclick="input(5);">5</button></td>
+			<td align="center"><button id="6" class="bt" onclick="input(6);">6</button></td>
+			<td align="center"><button id="x" class="bt" onclick="input('*');">x</button></td>
+		</tr>
+		<tr>
+			<td align="center"><button id="1" class="bt" onclick="input(1);">1</button></td>
+			<td align="center"><button id="2" class="bt" onclick="input(2);">2</button></td>
+			<td align="center"><button id="3" class="bt" onclick="input(3);">3</button></td>
+			<td align="center"><button id="-" class="bt" onclick="input('-');">-</button></td>
+		</tr>
+		<tr>
+			<td align="center"><button id="0" class="bt" onclick="input(0);">0</button></td>
+			<td align="center"><button id="." class="bt" onclick="input('.');">.</button></td>
+			<td align="center"><button id="=" class="bt" onclick="egale();">=</button></td>
+			<td align="center"><button id="+" class="bt" onclick="input('+');">+</button></td>
+		</tr>
+	</table>
+</body>
+
+</html>
